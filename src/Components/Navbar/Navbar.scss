@@ -1,0 +1,50 @@
+@import '../../index.scss';
+
+.nav {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: $colorSmokyWhite;
+  box-shadow: 5px 5px 20px 0px rgba(34, 60, 80, 0.4);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+  }
+
+  &__leftBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  &__heading {
+    font-size: 28px;
+    color: $colorText;
+  }
+
+  &__description {
+    color: $colorText;
+  }
+}
+
+@media (max-width: 960px) {
+  .nav {
+    &__description {
+      display: none;
+    }
+
+    &__leftBlock {
+      padding: 10px;
+      padding-left: 20px;
+    }
+
+    &__container {
+      padding: 0;
+    }
+  }
+}

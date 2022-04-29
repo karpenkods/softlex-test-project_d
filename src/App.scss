@@ -1,0 +1,122 @@
+@import './index.scss';
+
+.tasks {
+  padding: 20px;
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px;
+    color: $colorText;
+  }
+
+  &__loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  &__empty {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: $colorText;
+  }
+
+  &__sortWrapper {
+    margin-bottom: 20px;
+  }
+
+  &__sortText {
+    font-size: 18px;
+    color: $colorText;
+    border-bottom: 1.5px solid $colorText;
+  }
+
+  &__sortButton {
+    margin-left: 10px;
+    color: $colorText;
+    font-size: 18px;
+    background-color: transparent;
+    opacity: 0.5;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__sortArrow {
+    width: 15px;
+    margin-left: 2px;
+    vertical-align: middle;
+    &--up {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__pagesWrapper {
+    margin-top: 20px;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  &__pageButton {
+    margin: 0 10px 0 0;
+    font-size: 18px;
+    color: $colorText;
+    background-color: transparent;
+    opacity: 1;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:last-child {
+      margin: 0;
+    }
+    &--active {
+      color: $colorTitian;
+    }
+  }
+
+  &__adminBtn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: $colorText;
+    background-color: $colorGreen;
+    transition: 0.3s;
+    box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.3);
+    &:hover {
+      box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.5);
+    }
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 14px;
+    color: $colorText;
+  }
+}
+
+@media (max-width: 960px) {
+  .tasks {
+    &__sortWrapper {
+      margin-bottom: 0;
+    }
+
+    &__sortButton {
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+
+    &__sortText {
+      margin-left: 5px;
+    }
+  }
+}

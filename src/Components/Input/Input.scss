@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+.inputItem {
+  &__name {
+    color: $colorSmokyWhite;
+  }
+
+  &__inputError {
+    font-size: 14px;
+    color: $colorTitian;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    padding: 7px;
+    font-size: 18px;
+    border: none;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+      box-shadow: 5px 5px 10px 0px $colorGreen;
+    }
+  }
+
+  &__input--error {
+    box-shadow: 5px 5px 10px 0px $colorTitian;
+  }
+
+  &__inputArea {
+    max-width: 100%;
+    height: 150px;
+  }
+}

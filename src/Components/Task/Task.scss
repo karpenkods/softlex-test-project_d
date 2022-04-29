@@ -1,0 +1,63 @@
+@import '../../index.scss';
+
+.taskItem {
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  background-color: $colorSmokyWhite;
+  box-shadow: 5px 5px 8px 0px rgba(34, 60, 80, 0.5);
+  transition: 0.5s;
+
+  &__access {
+    background-color: $colorGreen;
+  }
+
+  &__del {
+    display: none;
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 10px;
+    color: $colorText;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__checkBox {
+    margin-left: 10px;
+    vertical-align: middle;
+    transform: scale(1.7);
+    cursor: pointer;
+  }
+
+  &__button {
+    margin-top: 5px;
+    margin-left: 45%;
+    text-align: center;
+    padding: 7px 15px;
+    font-size: 18px;
+    color: $colorText;
+    background-color: $colorGreen;
+    transition: 0.5s;
+    &:hover {
+      color: $colorTitian;
+    }
+  }
+
+  &__textArea {
+    margin-bottom: 10px;
+  }
+
+  &__editBtn {
+    width: 20px;
+    margin-left: 10px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &__editImg {
+    width: 100%;
+    fill: $colorTitian;
+  }
+}
