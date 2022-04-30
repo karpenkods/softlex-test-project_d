@@ -66,7 +66,7 @@ const App = () => {
   }, [sort, pageNum, dispatch])
 
   useEffect(() => {
-    const token = localStorage.getItem('token')
+    const token = sessionStorage.getItem('token')
     if (token) dispatch(AppSetToken(token))
   }, [dispatch])
 

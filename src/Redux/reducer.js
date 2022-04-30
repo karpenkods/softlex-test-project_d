@@ -107,7 +107,7 @@ export const AppLogin = (username, password) => async (dispatch) => {
     dispatch(AppSetErrorLogin({}))
     if (data.status === 'ok') {
       dispatch(AppSetToken(data.message.token))
-      localStorage.setItem('token', data.message.token)
+      sessionStorage.setItem('token', data.message.token)
     } else if (data.status === 'error') dispatch(AppSetErrorLogin(data.message))
 
     dispatch(AppSetFetching(false))
@@ -119,7 +119,7 @@ export const AppChange = (text, status, token, id) => async (dispatch) => {
     const data = await API.change(text, status, token, id)
     if (data.status === 'ok') dispatch(AppSetChange({ text, status, id }))
     else if (data.status === 'error' && data.message === 'Токен истёк')
-      localStorage.removeItem('token')
+      sessionStorage.removeItem('token')
   } catch (error) {}
 }
 
