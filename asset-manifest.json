@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/softlex-test-project_d/static/css/main.f5e4949c.css",
-    "main.js": "/softlex-test-project_d/static/js/main.e0fe5078.js",
+    "main.js": "/softlex-test-project_d/static/js/main.7b3399d3.js",
     "static/media/roboto-v29-latin_cyrillic-700.woff": "/softlex-test-project_d/static/media/roboto-v29-latin_cyrillic-700.3b1c20c745bc4c9f1093.woff",
     "static/media/roboto-v29-latin_cyrillic-regular.woff": "/softlex-test-project_d/static/media/roboto-v29-latin_cyrillic-regular.90fc8764675b01c9cc05.woff",
     "static/media/roboto-v29-latin_cyrillic-700.woff2": "/softlex-test-project_d/static/media/roboto-v29-latin_cyrillic-700.4bdcfadc292241e3b817.woff2",
@@ -10,10 +10,10 @@
     "index.html": "/softlex-test-project_d/index.html",
     "static/media/sort_down.svg": "/softlex-test-project_d/static/media/sort_down.a53e693615c5c08eed86a950c26da92b.svg",
     "main.f5e4949c.css.map": "/softlex-test-project_d/static/css/main.f5e4949c.css.map",
-    "main.e0fe5078.js.map": "/softlex-test-project_d/static/js/main.e0fe5078.js.map"
+    "main.7b3399d3.js.map": "/softlex-test-project_d/static/js/main.7b3399d3.js.map"
   },
   "entrypoints": [
     "static/css/main.f5e4949c.css",
-    "static/js/main.e0fe5078.js"
+    "static/js/main.7b3399d3.js"
   ]
 }
